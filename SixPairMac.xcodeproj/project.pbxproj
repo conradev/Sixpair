@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* SixPairMacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* SixPairMacAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9C57ABE116CDAF7C00735307 /* IOHIDDevice_.c in Sources */ = {isa = PBXBuildFile; fileRef = D0093DF6121F1B6C00396E03 /* IOHIDDevice_.c */; };
+		D0093DC0121F17EA00396E03 /* SixaxisController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0093DBF121F17EA00396E03 /* SixaxisController.m */; };
+		D0093E00121F1B6C00396E03 /* ImmrHIDUtilAddOn.c in Sources */ = {isa = PBXBuildFile; fileRef = D0093DF4121F1B6C00396E03 /* ImmrHIDUtilAddOn.c */; };
+		D0093E13121F1C5800396E03 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0093E12121F1C5800396E03 /* IOKit.framework */; };
+		D0B2B0CC121EEA30009CB1E5 /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B2B0CB121EEA30009CB1E5 /* MobileDevice.framework */; };
+		D0B2B0E0121EF85A009CB1E5 /* iDeviceFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2B0DF121EF85A009CB1E5 /* iDeviceFinder.m */; };
+		D0B2B116121EFF4A009CB1E5 /* iDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2B115121EFF4A009CB1E5 /* iDevice.m */; };
+		D0B2B132121F02E5009CB1E5 /* PairingController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B2B131121F02E5009CB1E5 /* PairingController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* SixPairMacAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixPairMacAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* SixPairMacAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixPairMacAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* SixPairMac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixPairMac_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* SixPairMac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SixPairMac-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* SixPairMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixPairMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0093DBE121F17EA00396E03 /* SixaxisController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixaxisController.h; sourceTree = "<group>"; };
+		D0093DBF121F17EA00396E03 /* SixaxisController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixaxisController.m; sourceTree = "<group>"; };
+		D0093DE8121F1B6C00396E03 /* HID_Config_Utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HID_Config_Utilities.c; sourceTree = "<group>"; };
+		D0093DE9121F1B6C00396E03 /* HID_Config_Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HID_Config_Utilities.h; sourceTree = "<group>"; };
+		D0093DEA121F1B6C00396E03 /* HID_Error_Handler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HID_Error_Handler.c; sourceTree = "<group>"; };
+		D0093DEB121F1B6C00396E03 /* HID_Error_Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HID_Error_Handler.h; sourceTree = "<group>"; };
+		D0093DEC121F1B6C00396E03 /* HID_Name_Lookup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HID_Name_Lookup.c; sourceTree = "<group>"; };
+		D0093DED121F1B6C00396E03 /* HID_Name_Lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HID_Name_Lookup.h; sourceTree = "<group>"; };
+		D0093DEE121F1B6C00396E03 /* HID_Queue_Utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HID_Queue_Utilities.c; sourceTree = "<group>"; };
+		D0093DEF121F1B6C00396E03 /* HID_Queue_Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HID_Queue_Utilities.h; sourceTree = "<group>"; };
+		D0093DF0121F1B6C00396E03 /* HID_Utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HID_Utilities.c; sourceTree = "<group>"; };
+		D0093DF1121F1B6C00396E03 /* HID_Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HID_Utilities.h; sourceTree = "<group>"; };
+		D0093DF2121F1B6C00396E03 /* HID_Utilities_External.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HID_Utilities_External.h; sourceTree = "<group>"; };
+		D0093DF4121F1B6C00396E03 /* ImmrHIDUtilAddOn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ImmrHIDUtilAddOn.c; sourceTree = "<group>"; };
+		D0093DF5121F1B6C00396E03 /* ImmrHIDUtilAddOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImmrHIDUtilAddOn.h; sourceTree = "<group>"; };
+		D0093DF6121F1B6C00396E03 /* IOHIDDevice_.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IOHIDDevice_.c; sourceTree = "<group>"; };
+		D0093DF7121F1B6C00396E03 /* IOHIDDevice_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDDevice_.h; sourceTree = "<group>"; };
+		D0093DF8121F1B6C00396E03 /* IOHIDElement_.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IOHIDElement_.c; sourceTree = "<group>"; };
+		D0093DF9121F1B6C00396E03 /* IOHIDElement_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDElement_.h; sourceTree = "<group>"; };
+		D0093DFA121F1B6C00396E03 /* IOHIDLib_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDLib_.h; sourceTree = "<group>"; };
+		D0093E12121F1C5800396E03 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		D0B2B0CB121EEA30009CB1E5 /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileDevice.framework; path = /System/Library/PrivateFrameworks/MobileDevice.framework; sourceTree = "<absolute>"; };
+		D0B2B0D2121EEB9C009CB1E5 /* mobiledevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobiledevice.h; sourceTree = "<group>"; };
+		D0B2B0DE121EF85A009CB1E5 /* iDeviceFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iDeviceFinder.h; sourceTree = "<group>"; };
+		D0B2B0DF121EF85A009CB1E5 /* iDeviceFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iDeviceFinder.m; sourceTree = "<group>"; };
+		D0B2B114121EFF4A009CB1E5 /* iDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iDevice.h; sourceTree = "<group>"; };
+		D0B2B115121EFF4A009CB1E5 /* iDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iDevice.m; sourceTree = "<group>"; };
+		D0B2B130121F02E5009CB1E5 /* PairingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairingController.h; sourceTree = "<group>"; };
+		D0B2B131121F02E5009CB1E5 /* PairingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairingController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				D0B2B0CC121EEA30009CB1E5 /* MobileDevice.framework in Frameworks */,
+				D0093E13121F1C5800396E03 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* SixPairMacAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* SixPairMacAppDelegate.m */,
+				D0B2B0DE121EF85A009CB1E5 /* iDeviceFinder.h */,
+				D0B2B0DF121EF85A009CB1E5 /* iDeviceFinder.m */,
+				D0B2B114121EFF4A009CB1E5 /* iDevice.h */,
+				D0B2B115121EFF4A009CB1E5 /* iDevice.m */,
+				D0B2B130121F02E5009CB1E5 /* PairingController.h */,
+				D0B2B131121F02E5009CB1E5 /* PairingController.m */,
+				D0093DBE121F17EA00396E03 /* SixaxisController.h */,
+				D0093DBF121F17EA00396E03 /* SixaxisController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				D0B2B0CB121EEA30009CB1E5 /* MobileDevice.framework */,
+				D0093E12121F1C5800396E03 /* IOKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* SixPairMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SixPairMac */ = {
+			isa = PBXGroup;
+			children = (
+				D0B2B0D2121EEB9C009CB1E5 /* mobiledevice.h */,
+				D0093DE6121F1B6C00396E03 /* HID Utilities */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = SixPairMac;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* SixPairMac_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* SixPairMac-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0093DE6121F1B6C00396E03 /* HID Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0093DE7121F1B6C00396E03 /* English.lproj */,
+				D0093DE8121F1B6C00396E03 /* HID_Config_Utilities.c */,
+				D0093DE9121F1B6C00396E03 /* HID_Config_Utilities.h */,
+				D0093DEA121F1B6C00396E03 /* HID_Error_Handler.c */,
+				D0093DEB121F1B6C00396E03 /* HID_Error_Handler.h */,
+				D0093DEC121F1B6C00396E03 /* HID_Name_Lookup.c */,
+				D0093DED121F1B6C00396E03 /* HID_Name_Lookup.h */,
+				D0093DEE121F1B6C00396E03 /* HID_Queue_Utilities.c */,
+				D0093DEF121F1B6C00396E03 /* HID_Queue_Utilities.h */,
+				D0093DF0121F1B6C00396E03 /* HID_Utilities.c */,
+				D0093DF1121F1B6C00396E03 /* HID_Utilities.h */,
+				D0093DF2121F1B6C00396E03 /* HID_Utilities_External.h */,
+				D0093DF3121F1B6C00396E03 /* IOHIDManager */,
+			);
+			path = "HID Utilities";
+			sourceTree = "<group>";
+		};
+		D0093DE7121F1B6C00396E03 /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		D0093DF3121F1B6C00396E03 /* IOHIDManager */ = {
+			isa = PBXGroup;
+			children = (
+				D0093DF4121F1B6C00396E03 /* ImmrHIDUtilAddOn.c */,
+				D0093DF5121F1B6C00396E03 /* ImmrHIDUtilAddOn.h */,
+				D0093DF6121F1B6C00396E03 /* IOHIDDevice_.c */,
+				D0093DF7121F1B6C00396E03 /* IOHIDDevice_.h */,
+				D0093DF8121F1B6C00396E03 /* IOHIDElement_.c */,
+				D0093DF9121F1B6C00396E03 /* IOHIDElement_.h */,
+				D0093DFA121F1B6C00396E03 /* IOHIDLib_.h */,
+			);
+			path = IOHIDManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SixPairMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SixPairMac" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SixPairMac;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SixPairMac;
+			productReference = 8D1107320486CEB800E47090 /* SixPairMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SixPairMac" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SixPairMac */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SixPairMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* SixPairMacAppDelegate.m in Sources */,
+				D0B2B0E0121EF85A009CB1E5 /* iDeviceFinder.m in Sources */,
+				D0B2B116121EFF4A009CB1E5 /* iDevice.m in Sources */,
+				D0B2B132121F02E5009CB1E5 /* PairingController.m in Sources */,
+				D0093DC0121F17EA00396E03 /* SixaxisController.m in Sources */,
+				D0093E00121F1B6C00396E03 /* ImmrHIDUtilAddOn.c in Sources */,
+				9C57ABE116CDAF7C00735307 /* IOHIDDevice_.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SixPairMac_Prefix.pch;
+				INFOPLIST_FILE = "SixPairMac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = SixPairMac;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SixPairMac_Prefix.pch;
+				INFOPLIST_FILE = "SixPairMac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = SixPairMac;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = /System/Library/PrivateFrameworks;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SixPairMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SixPairMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
