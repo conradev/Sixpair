@@ -17,6 +17,7 @@
 	
 	NSTextField   *deviceLabel;
 	NSTextField   *controllerLabel;
+    NSTextField   *successLabel;
 	NSButton      *pairButton;
 	
 	BOOL ideviceConnected;
