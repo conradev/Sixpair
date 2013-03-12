@@ -12,7 +12,7 @@ static PairingController *sharedInstance;
 
 @implementation PairingController
 
-@synthesize deviceFinder, sixController, deviceLabel, controllerLabel, pairButton;
+@synthesize deviceFinder, sixController, deviceLabel, controllerLabel, pairButton, successLabel;
 
 + (PairingController *)sharedInstance {
 	if (!sharedInstance){
@@ -30,25 +30,29 @@ static PairingController *sharedInstance;
 		
 		sixController = [[[SixaxisController alloc] init] retain];
 		[sixController setDelegate:self];
+        
+        [self updateButtonVisibility];
 	}
 	return self;
 }
 - (void)ps3ControllerDidConnect {
 	sixaxisConnected = YES;
 	[controllerLabel setStringValue:@"PS3 Sixaxis Controller connected"];
-	[self showButton];
+	[self updateButtonVisibility];
 }
 - (void)ps3ControllerDidDisconnect {
 	sixaxisConnected = NO;
+    sixaxisPaired = NO;
 	[controllerLabel setStringValue:@"Connect a PS3 Controller (over USB)"];
-	[self showButton];
+	[self updateButtonVisibility];
 }
 - (void)dealloc {
 	if (deviceFinder) [deviceFinder release];
 	[super dealloc];
 }
-- (void)showButton {
-	[pairButton setHidden:!(ideviceConnected && sixaxisConnected)];
+- (void)updateButtonVisibility {
+	[pairButton setHidden:!(ideviceConnected && sixaxisConnected && !sixaxisPaired)];
+    [successLabel setHidden:!sixaxisPaired];
 }
 - (void)didFindiDevice:(iDevice *)device {
 	currentDevice = device;
@@ -56,14 +60,19 @@ static PairingController *sharedInstance;
 	NSLog(@"\nType: %@\nVersion: %@\nName: %@\nBTAddress: %@", device.type, device.version, device.name, device.btaddr);
 	[deviceLabel setStringValue:[NSString stringWithFormat:@"%@ - %@", device.name, device.version]];
 	ideviceConnected = YES;
-	[pairButton setTitle:[NSString stringWithFormat:@"Pair Controller to %@", [currentDevice.type substringToIndex:([currentDevice.type length] - 3)]]];
+    sixaxisPaired = NO;
+    NSString * deviceType = [currentDevice.type substringToIndex:([currentDevice.type length] - 3)];
+	[pairButton setTitle:[NSString stringWithFormat:@"Pair Controller to %@", deviceType]];
 	[pairButton setTarget:self];
 	[pairButton setAction:@selector(pairDevices)];
-	[self showButton];
+    [successLabel setStringValue:[NSString stringWithFormat:@"Controller paired to %@, ENJOY!", deviceType]];
+	[self updateButtonVisibility];
 }
 - (IBAction)pairDevices {
 	NSLog(@"Pairing devices...");
 	[sixController setBluetoothAddress:currentDevice.btaddr];
+    sixaxisPaired = YES;
+    [self updateButtonVisibility];
 }
 
 @end
