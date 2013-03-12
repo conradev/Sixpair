@@ -17,16 +17,19 @@
 	
 	NSTextField   *deviceLabel;
 	NSTextField   *controllerLabel;
+    NSTextField   *successLabel;
 	NSButton      *pairButton;
 	
 	BOOL ideviceConnected;
 	BOOL sixaxisConnected;
+    BOOL sixaxisPaired;
 }
 
 @property (nonatomic, retain) iDeviceFinder *deviceFinder;
 @property (nonatomic, retain) SixaxisController *sixController;
 @property (nonatomic, retain) IBOutlet NSTextField *deviceLabel;
 @property (nonatomic, retain) IBOutlet NSTextField *controllerLabel;
+@property (nonatomic, retain) IBOutlet NSTextField *successLabel;
 @property (nonatomic, retain) IBOutlet NSButton *pairButton;
 
 + (PairingController *)sharedInstance;
